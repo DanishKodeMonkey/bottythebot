@@ -33,6 +33,9 @@ def print_psycopg2_exception(err):
     print(f"\npsycopg2 ERROR: \n{err}on line number: {line_num}\n")
     print(f"psycopg2 traceback: \n{traceback} type: {err_type}")
 
+    #print related error objects.
+    print(f"\n Error Objects detected: {err_obj}")
+
     # Fetch and print psycopg2 extensions.Diagnostics object attribute
     print(f"\nextensions.diagnostics: {err.diag}")
 

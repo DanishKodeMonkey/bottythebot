@@ -35,17 +35,17 @@ def create_table(TABLE_NAME="testtable") -> bool:
             return True
 
 
-    except psycopg2.Error as err:
+    except psycopg2.Error as errErr:
         print("An error has occured...")
-        psqle.print_psycopg2_exception(err)
+        psqle.print_psycopg2_exception(errErr)
 
-    except psycopg2.OperationalError as err:
+    except psycopg2.OperationalError as errOp:
         print("An operational error has occured...")
-        psqle.print_psycopg2_exception(err)
+        psqle.print_psycopg2_exception(errOp)
         
-    except Exception as err:
+    except Exception as errExc:
         print("A general exception has occured...")
-        psqle.print_psycopg2_exception(err)
+        psqle.print_psycopg2_exception(errExc)
     finally:
         cur.close()
         

@@ -8,5 +8,8 @@ frozenlist==1.3.3
 idna==3.4
 multidict==6.0.4
 psycopg2==2.9.6
+PyInputPlus==0.2.12
+PySimpleValidate==0.2.12
 python-dotenv==1.0.0
+stdiomask==0.0.6
 yarl==1.9.2
