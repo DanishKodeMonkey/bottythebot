@@ -34,7 +34,7 @@ def input_data():
     #Create while loop to process confirmation of query.
     while True:
         inputCommit = pyip.inputChoice(["Y","N"],"\nPlease confirm query commit: Y/N?\n")
-        if inputCommit == "Y"
+        if inputCommit == "Y":
             print(f"\nCommittin query...\n")
             return update_data(game_id,TABLE_NAME, GAME_TYPE, GAME_DATE,GAME_TIME)
         if inputCommit =="N":
