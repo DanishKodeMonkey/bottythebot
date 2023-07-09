@@ -14,7 +14,7 @@ import random
 #   Load the dotenv interaction
 load_dotenv()
 #   Pull token from env file, assign to TOKEN
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv('DISCORD_TOKEN') 
 #   Set intents of the discord bot in accordance with the requirements of the API (defaults work fine for testing)
 intents = discord.Intents.default()
 #   Send message_content request, to allow for interacting with discord through messages.
